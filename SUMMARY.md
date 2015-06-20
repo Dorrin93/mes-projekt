@@ -2,5 +2,5 @@
 
 * [Wstęp teoretyczny](sprawozdanie/wstep.md)
 * [Przepływ a Elmer](sprawozdanie/elmer.md)
-* [Przepływ a C++]()
-* [Porównanie wyników]()
+* [Przepływ a C++](sprawozdanie/cpp.md)
+* [Porównanie wyników](sprawozdanie/porownanie.md)
