@@ -41,3 +41,14 @@ segments
 1 0 2 3 4 -bc=3
 1 0 2 4 1 -bc=1
 ```
+
+Punkty będą definiować geometrię, jednak same w sobie nic nie znaczą. Składnia punktu:  
+```
+numer wartość-OX wartosć-OY
+  1        0        -1.0
+```
+Istotne jest to, że nasza siatka znajduje się w przestrzeni kartezjańskiej, więc nie musimy zaczynać od punktu `(0,0)`, co ma dość istotny wpływ na obliczenia.  
+Następnie należy zdefiniować segmenty:  
+```
+coś cośtam coś innego punkt1 punt2 warunek-brzegowy
+```
