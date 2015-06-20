@@ -45,9 +45,9 @@ Solver 1
   Steady State Convergence Tolerance = 1.0e-7
   Steady State Convergence Measure = Solution
   Nonlinear System Convergence Tolerance = 1.0e-7
-  Nonlinear System Max Iterations = 20
+  Nonlinear System Max Iterations = 40
   Nonlinear System Newton After Iterations = 3
-  Nonlinear System Newton After Tolerance = 1.0e-3
+  Nonlinear System Newton After Tolerance = 1.0e-4
   Nonlinear System Relaxation Factor = 1
   Nonlinear System Convergence Measure = Solution
   Linear System Solver = Iterative

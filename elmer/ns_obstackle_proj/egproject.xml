@@ -175,18 +175,6 @@
    <solverparameters>
       <item index="0" name="Navier-Stokes">
          <widget type="RadioButton">
-            <objectName>linearSystemSolverIterative</objectName>
-            <isChecked>1</isChecked>
-         </widget>
-         <widget type="RadioButton">
-            <objectName>linearSystemSolverDirect</objectName>
-            <isChecked>0</isChecked>
-         </widget>
-         <widget type="RadioButton">
-            <objectName>linearSystemSolverMultigrid</objectName>
-            <isChecked>0</isChecked>
-         </widget>
-         <widget type="RadioButton">
             <objectName>execAlways</objectName>
             <isChecked>1</isChecked>
          </widget>
@@ -208,6 +196,18 @@
          </widget>
          <widget type="RadioButton">
             <objectName>execNever</objectName>
+            <isChecked>0</isChecked>
+         </widget>
+         <widget type="RadioButton">
+            <objectName>linearSystemSolverIterative</objectName>
+            <isChecked>1</isChecked>
+         </widget>
+         <widget type="RadioButton">
+            <objectName>linearSystemSolverDirect</objectName>
+            <isChecked>0</isChecked>
+         </widget>
+         <widget type="RadioButton">
+            <objectName>linearSystemSolverMultigrid</objectName>
             <isChecked>0</isChecked>
          </widget>
          <widget type="CheckBox">
@@ -243,10 +243,6 @@
             <isChecked>0</isChecked>
          </widget>
          <widget type="CheckBox">
-            <objectName>linearSystemAbortWhenNotConvergedCheck</objectName>
-            <isChecked>0</isChecked>
-         </widget>
-         <widget type="CheckBox">
             <objectName>stabilizeCheck</objectName>
             <isChecked>1</isChecked>
          </widget>
@@ -261,6 +257,10 @@
          <widget type="CheckBox">
             <objectName>optimizeBandwidthCheck</objectName>
             <isChecked>1</isChecked>
+         </widget>
+         <widget type="CheckBox">
+            <objectName>linearSystemAbortWhenNotConvergedCheck</objectName>
+            <isChecked>0</isChecked>
          </widget>
          <widget type="LineEdit">
             <objectName>mgLevelsEdit</objectName>
@@ -368,7 +368,7 @@
          </widget>
          <widget type="LineEdit">
             <objectName>nonlinSystemMaxIterationEdit</objectName>
-            <text>20</text>
+            <text>40</text>
          </widget>
          <widget type="LineEdit">
             <objectName>nonlinSystemRelaxationFactorEdit</objectName>
@@ -380,7 +380,7 @@
          </widget>
          <widget type="LineEdit">
             <objectName>nonlinSystemNewtonAfterTolEdit</objectName>
-            <text>1.0e-3</text>
+            <text>1.0e-4</text>
          </widget>
          <widget type="ComboBox">
             <objectName>boomerCycle</objectName>
