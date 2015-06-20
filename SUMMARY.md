@@ -1,3 +1,3 @@
 # Spis treści
 
-* [Wstęp teoretyczny](chapter1.md)
+* [Wstęp teoretyczny](wstep.md)
