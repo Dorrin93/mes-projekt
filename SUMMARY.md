@@ -1,3 +1,3 @@
-# Summary
+# Spis treści
 
-* [First Chapter](chapter1.md)
+* [Wstęp teoretyczny](chapter1.md)
