@@ -10,4 +10,5 @@
 * Równania rozkładu ciepła
 * Równanie Helmholtza-Smoluchowskiego (potencjał elektrokinetyczny)
 
-Zajmiemy się **równaniem Naviera-Stokesa**.
+Zajmiemy się **równaniem Naviera-Stokesa**.  
+Najpierw jednak należy zdefiniować geometrię. W naszym przypdaku najłatwiej będzie to zrobić tworząc plik tekstowy w fomacie **in2d**. Tworzymy więc w ulubionym edytorze dowolny plik tego typu, na przykład *example.in2d*:
