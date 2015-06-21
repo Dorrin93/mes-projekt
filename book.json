@@ -1,7 +1,8 @@
 {
     "plugins": [
         "mathjax",
-        "style-rewrite"
+        "style-rewrite",
+        "punctuate"
     ],
     "pluginsConfig": {}
 }
