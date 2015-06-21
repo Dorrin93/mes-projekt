@@ -1,8 +1,8 @@
 # Przepływ a _Elmer_
 
-<div class="align-justify">**Elmer** jest otwartoźródłowym pakietem obliczeniowym. Jest zdecydowanie mniejszy niż **Abaqus**, jednak dzęki temu łatwiej nie utunąć w natłoku dostępnych opcji.  
-Środowisko posiada zarówno tryb tekstowy, jak i wersję GUI. Dostępne jest na systemach Windows i Linux (**Debian i Ubuntu**, na mniej popularnych dystrybucjach trzeba skompilować kod samemu).  
-**Elmer** umożliwia rozwiązywanie następujących typów zagadnień:</div>  
+<p align="justify">**Elmer** jest otwartoźródłowym pakietem obliczeniowym. Jest zdecydowanie mniejszy niż **Abaqus**, jednak dzęki temu łatwiej nie utunąć w natłoku dostępnych opcji.  
+Środowisko posiada zarówno tryb tekstowy, jak i wersję GUI. Dostępne jest na systemach Windows i Linux (**Debian i Ubuntu**, na mniej popularnych dystrybucjach trzeba skompilować kod samemu).
+**Elmer** umożliwia rozwiązywanie następujących typów zagadnień: </p>
 * Równanie Naviera-Stokesa (przepływy)
 * Elastyczność liniowa
 * Elektrostatyka
