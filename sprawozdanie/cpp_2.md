@@ -26,7 +26,7 @@ Jak widać, usuwa to wszystkie pliki **o**, **dat**, **png**, oraz nasz wynikowy
 
 Przykładowe wyniki wyglądają tak:
 
-![velocity_abs](velocity_abs.png)
+![velocity_abs](https://github.com/Dorrin93/mes-projekt/blob/master/sprawozdanie/velocity_abs.png?raw=true)
   
 Jak widać, wyniki z gnuplota również są wymowne i czytelne.
 </p> 
