@@ -20,8 +20,5 @@ Mesh
 ```
 Operacja i wynik:</p>
 <p align="center">
-![elmer03](https://github.com/Dorrin93/mes-projekt/blob/master/sprawozdanie/elmer03.png?raw=true)  
-
-![elmer04](elmer04.png)
-</P>
-==========================
+![elmer03](https://github.com/Dorrin93/mes-projekt/blob/master/sprawozdanie/elmer03_04.png?raw=true)  
+***

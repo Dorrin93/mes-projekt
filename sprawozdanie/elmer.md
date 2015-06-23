@@ -10,8 +10,4 @@
 * Równanie Helmholtza-Smoluchowskiego (potencjał elektrokinetyczny)
 
 Zajmiemy się **równaniem Naviera-Stokesa**.  
-
-
-
-
-
+***

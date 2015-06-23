@@ -5,7 +5,7 @@ Model
     Setup
 ```
 Nie musimy tu jednak niczego zmieniać.</p>
-<p align="center">![elmer05](elmer05.png)</p>
+<p align="center">![elmer05](https://github.com/Dorrin93/mes-projekt/blob/master/sprawozdanie/elmer05.png?raw=true)</p>
 <p align="justify">Następnie dodajemy równanie Naviera-Stokesa jako aktywne:  
 ```cpp
 Model  
@@ -27,5 +27,5 @@ Model
 </p>
 <p align="justify">Ustawiamy w ten sposób równanie na aktywne, aplikujemy je do geometrii. Zmieniamy również typ badania zbieżności tak, by dla naszego przypadku dawał lepsze wyniki, oraz zwiększamy ilość iteracji w nadziei na zwiększenie doładności. Odbija się to oczywiście na czasie symulacji, lecz nie zwiększa go tyle, by stało się to nieopłacalne.  
 Po lewej ustawienia równania, po prawej ustawienia solvera:</p>
-<p align="center">![elmer06](elmer06.png)</p>
-==========================
+<p align="center">![elmer06](https://github.com/Dorrin93/mes-projekt/blob/master/sprawozdanie/elmer06.png?raw=true)</p>
+***

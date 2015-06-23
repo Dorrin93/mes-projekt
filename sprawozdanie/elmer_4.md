@@ -14,5 +14,5 @@ Model
 ```
 </p>
 <p align="justify">Ustawiliśmy *gęstość*, oraz *lepkość* cieczy na 1. Takiego samego ustawienia użyjemy później w programie w **C++**.</p>
-<p align="center">![](elmer07.png)</p>
-==========================
+<p align="center">![](https://github.com/Dorrin93/mes-projekt/blob/master/sprawozdanie/elmer07.png?raw=true)</p>
+***

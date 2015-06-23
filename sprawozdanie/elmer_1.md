@@ -50,4 +50,5 @@ Kolejne dwie kolumny to punkty z których będzie składać się segment. Kolejn
 Na końcu nadajemy segmentowi warunek brzegowy. W tym przypadku, dla wygody oznaczyłem jako `-bc=1` lewą ściankę z której wypływa ciecz, jako `-bc=2` prawą do której ciecz wpływa, zaś `-bc=3` wszystkie ściany które będą ograniczać figurę.  
 Orientacyjny rysunek pokazujący znaczenie `dpl`, `dpp`, oraz kolejności punktów:  </p>
 <p align="center"> ![figura](https://github.com/Dorrin93/mes-projekt/blob/master/sprawozdanie/fig.png?raw=true)</p>
-W naszym przypadku miejsca oznaczone dpl wchodzą w skład figury (wartość `1`), podczas gdy dpp nie (wartość `0`). 
+W naszym przypadku miejsca oznaczone dpl wchodzą w skład figury (wartość `1`), podczas gdy dpp nie (wartość `0`).
+***
