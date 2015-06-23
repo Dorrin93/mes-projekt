@@ -1,12 +1,19 @@
-# Spis treści
+# Summary
 
-* [Tytuł](README.md)
+* [Słowo wstępu](README.md)
 * [Wstęp teoretyczny](sprawozdanie/wstep.md)
 * [Przepływ a Elmer](sprawozdanie/elmer.md)
+    * [Definiowanie geometrii](sprawozdanie/elmer_1.md)
+    * [Konfiguracja siatki](sprawozdanie/elmer_2.md)
+    * [Konfiguracja równiania](sprawozdanie/elmer_3.md)
+    * [Konfiguracja materiału](sprawozdanie/elmer_4.md)
+    * [Warunki brzegowe](sprawozdanie/elmer_5.md)
+    * [Symulacja i analiza wyników](sprawozdanie/elmer_6.md)
 * [Przepływ a C++](sprawozdanie/cpp.md)
+    * [Pisanie programu z użyciem biblioteki vi_flow](sprawozdanie/cpp_1.md)
+    * [Kompilacja i analiza wyników](sprawozdanie/cpp_2.md)
 * [Porównanie wyników](sprawozdanie/porownanie.md)
+    * [Składowa pozioma](sprawozdanie/p_1.md)
+    * [Składowa pionowa](sprawozdanie/p_2.md)
+    * [Prędkość ogólna](sprawozdanie/p_3.md)
 
-# Krótki wstęp
-Projekt powstał w ramach zajęć **Podstawy MES**. Jego celem było porównanie wyników z zakresu przepływu cieczy lepkiej nieściśliwej między pakietem obliczeniowym **Elmer (metoda elementów skończonych)** a standardowym programem napisanym w języku **C++ (metoda różnic skończonych)**.  
-  
-Dokument powstał przy użyciu języka znacznków Markdown.
