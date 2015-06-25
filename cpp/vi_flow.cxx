@@ -22,7 +22,7 @@ double imn::vortHelper(double **f, double **v, long x, long y)
 double imn::fluxHelper(double **f, double **v, long x, long y,
         double dx, double dy)
 {
-    return (f[x+1][y] + f[x-1][y] + f[x][y+1] + f[x][y-1] - v[x][y] * 
+    return (f[x+1][y] + f[x-1][y] + f[x][y+1] + f[x][y-1] - v[x][y] *
             dx * dy) * 0.25;
 }
 
@@ -196,7 +196,7 @@ void imn::navier_stokes(double xmin, double xmax, double ymin, double ymax, doub
     if(!was_open)
         obstacle ? file.open("ns_obstackle.dat") : file.open("poiseuille.dat");
 
-    file << "# x y u(x,y) v(x,y)" << std::endl;
+    file << "# x y u(x,y) v(x,y) v_abs(x, y)" << std::endl;
 
     for(long i = 0; i <= x_size; ++i){
         for(long j = 0; j <= y_size; ++j){
@@ -204,35 +204,27 @@ void imn::navier_stokes(double xmin, double xmax, double ymin, double ymax, doub
             file << xmin + i*dx << " " << ymin + j*dy << " ";
 
             if(obstacle && inside(xmin + i*dx, ymin + j*dy, dx, dy, walls)){
-                file << 0 << " " << 0;
+                file << 0 << " " << 0 << " " << 0;
             }
-/*
+
             else{
                 if(i != x_size && j != y_size)
-                    file << (f_grid[i][j+1] - f_grid[i][j]) / dy << " " << -(f_grid[i+1][j] - f_grid[i][j]) / dx;
+                    file << (f_grid[i][j+1] - f_grid[i][j]) / dy << " "
+                         << -(f_grid[i+1][j] - f_grid[i][j]) / dx << " "
+                         << sqrt(pow((f_grid[i][j+1] - f_grid[i][j]) / dy, 2) + pow(-(f_grid[i+1][j] - f_grid[i][j]) / dx, 2));
 
                 else if(i == x_size && j != y_size)
-                    file << (f_grid[i][j+1] - f_grid[i][j]) / dy << " " << 0;
+                    file << (f_grid[i][j+1] - f_grid[i][j]) / dy << " "
+                         << 0 << " "
+                         << fabs((f_grid[i][j+1] - f_grid[i][j]) / dy);
 
                 else if(j == y_size && i != x_size)
-                    file << 0 << " " << -(f_grid[i+1][j] - f_grid[i][j]) / dx;
+                    file << 0 << " "
+                         << -(f_grid[i+1][j] - f_grid[i][j]) / dx << " "
+                         << fabs(-(f_grid[i+1][j] - f_grid[i][j]) / dx);
 
                 else
-                    file << 0 << " " << 0;
-            }
-*/
-            else{
-                if(i != x_size && j != y_size)
-                    file << sqrt(pow((f_grid[i][j+1] - f_grid[i][j]) / dy, 2) + pow(-(f_grid[i+1][j] - f_grid[i][j]) / dx, 2));
-
-                else if(i == x_size && j != y_size)
-                    file << fabs((f_grid[i][j+1] - f_grid[i][j]) / dy);
-
-                else if(j == y_size && i != x_size)
-                    file << fabs(-(f_grid[i+1][j] - f_grid[i][j]) / dx);
-
-                else
-                    file << 0;
+                    file << 0 << " " << 0 << " " << 0;
             }
 
             file << std::endl;

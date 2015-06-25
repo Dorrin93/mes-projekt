@@ -1,5 +1,5 @@
 ## Konfiguracja materiału
-<p align="justify">Kolejny krok to ustawienie danych materiału:
+Kolejny krok to ustawienie danych materiału:
 ```cpp
 Model
     Material
@@ -12,7 +12,6 @@ Model
             [x] Body 1
         Ok
 ```
-</p>
-<p align="justify">Ustawiliśmy *gęstość*, oraz *lepkość* cieczy na 1. Takiego samego ustawienia użyjemy później w programie w **C++**.</p>
-<p align="center">![](https://github.com/Dorrin93/mes-projekt/blob/master/sprawozdanie/elmer07.png?raw=true)</p>
+Ustawiliśmy *gęstość*, oraz *lepkość* cieczy na 1. Takiego samego ustawienia użyjemy później w programie w **C++**.
+<p align="center">![elmer07](https://github.com/Dorrin93/mes-projekt/blob/master/sprawozdanie/elmer07.png?raw=true)</p>
 ***

@@ -1,6 +1,6 @@
 ##Kompilacja i analiza wyników
-<p align="justify">Do projektu dodałem makefile oraz skrypt gnuplota, które automatycznie skompilują program, uruchomią go i wygenerują wyniki.  
-Należy przejść do folderu z projektem i uruchomić program `make`:</p>
+Do projektu dodałem makefile oraz skrypt gnuplota, które automatycznie skompilują program, uruchomią go i wygenerują wyniki.  
+Należy przejść do folderu z projektem i uruchomić program `make`:
 ```
 $ make
 ```
@@ -13,7 +13,7 @@ Nie pozostaje już nic innego, jak program uruchomić:
 ```
 $ make run
 ```
-<p align="justify">Polecenie to spowoduje uruchomienie programu, a następnie gnuplota z przygotowanym wcześniej skryptem, który stowrzy trzy pliki: *velocity_abs.png*, *velocity_x.png*, oraz *velocity_y.png*. Jeżeli nie zmienialiśmy niczego w pliku main.cpp, dostaniemy również plik z wynikami numerycznymi: *ns_obstackle.dat*.  
+Polecenie to spowoduje uruchomienie programu, a następnie gnuplota z przygotowanym wcześniej skryptem, który stowrzy trzy pliki: *velocity_abs.png*, *velocity_x.png*, oraz *velocity_y.png*. Jeżeli nie zmienialiśmy niczego w pliku main.cpp, dostaniemy również plik z wynikami numerycznymi: *ns_obstackle.dat*.  
 Jeżeli chcemy wyczyścić projekt, pozbywając się wszystkich wygenerowanych do tej pory plików, mamy do tego również osobne polecenie:
 ```
 $ make clean
@@ -29,5 +29,4 @@ Przykładowe wyniki wyglądają tak:
 ![velocity_abs](https://github.com/Dorrin93/mes-projekt/blob/master/sprawozdanie/velocity_abs.png?raw=true)
   
 Jak widać, wyniki z gnuplota również są wymowne i czytelne.
-</p> 
 ***

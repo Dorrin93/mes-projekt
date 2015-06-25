@@ -1,7 +1,7 @@
 ## Pisanie programu z użyciem biblioteki vi_flow
 
-<p align="justify">Na potrzeby projektu skorzystałem z zaimplementowanej przeze mnie biblioteki numerycznej **vi_flow**, napisanej na podstawie czwartch laboratoriów z *Inżynierskich metod numerycznych*.  
-Cały kod dostępny jest w folderze cpp, oraz na moim [repozytorium](https://github.com/Dorrin93/imn-libs).</p>
+Na potrzeby projektu skorzystałem z zaimplementowanej przeze mnie biblioteki numerycznej **vi_flow**, napisanej na podstawie czwartch laboratoriów z *Inżynierskich metod numerycznych*.  
+Cały kod dostępny jest w folderze cpp, oraz na moim [repozytorium](https://github.com/Dorrin93/imn-libs).
 ```cpp
 #include "vi_flow.hpp"
 
@@ -44,12 +44,12 @@ int main(){
 } 
 ```  
   
-<p align="justify">Tak wygląda przykładowy plik *main*, który pozwoli nam uzyskać (miejmy nadzieję) wyniki jak najbardziej zbliżone do tych z **Elmera**. Przeanalizujmy kod:  </p>
+Tak wygląda przykładowy plik *main*, który pozwoli nam uzyskać (miejmy nadzieję) wyniki jak najbardziej zbliżone do tych z **Elmera**. Przeanalizujmy kod:
 1)
 ```cpp
 #include "vi_flow.hpp"
 ```
-<p align="justify">Typowe dla **C++** dołączenie nagłówka znajdującego się w tym samym folderze, w tym przypadku nagłówek naszej biblioteki.</p>
+Typowe dla **C++** dołączenie nagłówka znajdującego się w tym samym folderze, w tym przypadku nagłówek naszej biblioteki.
 2)
 ```cpp
 double mi = 1.;
@@ -73,7 +73,7 @@ imn::Point b = {2.7, -1};
 imn::Point c = {2.3, 0};
 imn::Point d = {2.7, 0};
 ```
-<p align="justify">Ustawnienie parametrów siatki i przeszkody. Te same wartości widzieliśmy w **Elmerze**, z tą różnicą, że tu musimy podać kroki przestrzenne, $$dx$$ oraz $$dy$$, które są wyjątkowo istotne dla naszych obliczeń - od nich zależy między innymi rozmiar siatki, oraz dokładność wyniku. Definiujemy tu również punkty budujące przeszkodę, które są prostymi strukturami zawierającymi dwie zmienne.</p>
+Ustawnienie parametrów siatki i przeszkody. Te same wartości widzieliśmy w **Elmerze**, z tą różnicą, że tu musimy podać kroki przestrzenne, $$dx$$ oraz $$dy$$, które są wyjątkowo istotne dla naszych obliczeń - od nich zależy między innymi rozmiar siatki, oraz dokładność wyniku. Definiujemy tu również punkty budujące przeszkodę, które są prostymi strukturami zawierającymi dwie zmienne.
 4)  
 ```cpp
 double vor(double x, double y){ 
@@ -84,7 +84,7 @@ double flu(double x, double y){
     return (Q/(2.*mi)) * ((y*y*y)/3. - (y*y)*0.5*(y_min+y_max) + y_min*y_max*y); 
 }
 ```  
-<p align="justify">Definicje wcześniej opisanych funkcji wirowości, oraz przepływu. Należy je zdefinować, gdyż implementacja schematu pobiera te dwa wskaźniki na funkcje.</p>
+Definicje wcześniej opisanych funkcji wirowości, oraz przepływu. Należy je zdefinować, gdyż implementacja schematu pobiera te dwa wskaźniki na funkcje.
 5)
 ```cpp
 std::ofstream file;
@@ -96,9 +96,9 @@ w3 = {c, d, imn::Wall::UP};
 w4 = {a, b, imn::Wall::DOWN};
 std::vector<imn::Wall*> walls = {&w1, &w2, &w3, &w4};
 ```
-<p align="justify">Strumień wyjściowy pliku będzie służył do zapisu wyników. Jeżeli chcemy mieć nazwę inną niż domyślną, należy go otworzyć i podać nazwę. Można też pozostawić go zamkniętym, wtedy zostanie nadana domyślna nazwa. Jeżeli sami otwieramy plik, należy pamiętać o tym, by go zamknąć i zmodyfikować skrypt gnuplota.  
+Strumień wyjściowy pliku będzie służył do zapisu wyników. Jeżeli chcemy mieć nazwę inną niż domyślną, należy go otworzyć i podać nazwę. Można też pozostawić go zamkniętym, wtedy zostanie nadana domyślna nazwa. Jeżeli sami otwieramy plik, należy pamiętać o tym, by go zamknąć i zmodyfikować skrypt gnuplota.  
 Ostatnim krokiem przed wywołaniem funkcji jest zdefiniowanie ściań składających się na przeszkodę. Obrałem tu nieco inny sposób ich budowy, niż widzieliśmy to w plikach typu **in2d**. Ściana taka składa się z dwóch punktów i oznaczenia brzegu. Na przykład, jako że punkt `a` i `c` mają taką samą wartość $$x$$, która jest mniejsza niż w przypadku `b` i `d`, czyni ją lewą ścianą.
-<font color="red">Bardzo ważne! Wartość współrzędnej $$x$$ pierwszego podanego punktu **musi** być mniejsza bądź równa niż współrzędna drugiego punktu. To samo tyczy się współrzędnej $$y$$.</font></p>
+<font color="red">Bardzo ważne! Wartość współrzędnej $$x$$ pierwszego podanego punktu **musi** być mniejsza bądź równa niż współrzędna drugiego punktu. To samo tyczy się współrzędnej $$y$$.</font>
 Ze wskaźników do tych ścian budujemy następnie wektor, który przekażemy do funckcji.
   
 6)
@@ -122,5 +122,5 @@ Argumenty mające wartości domyślne (więc nie jest konieczne ich podanie):
 * Ilość początkowych iteracji (domyślnie 500)
 * Położenie przeszkody - spód to fałsz, góra to prawda. Domyślnie fałsz.
 
-<p align="justify">Metodą doświadczalną doszedłem do tego, ża dla takiego kształtu siatki obliczeniowej, warunek zbieżności nie działa dokładnie tak, jakbym sobie tego życzył, więc wymusiłem 2200 iteracji. Dla wyższych wartości schemat się załamywał, wypluwając wartości `nan` jako wyniki.</p>
+Metodą doświadczalną doszedłem do tego, ża dla takiego kształtu siatki obliczeniowej, warunek zbieżności nie działa dokładnie tak, jakbym sobie tego życzył, więc wymusiłem 2200 iteracji. Dla wyższych wartości schemat się załamywał, wypluwając wartości `nan` jako wyniki.
 ***
